@@ -26,6 +26,7 @@ app.controller('homeCtrl', ['$scope', '$http', 'DTOptionsBuilder', 'DTColumnBuil
             .withDOM('lBfrtip')
             .withOption('serverSide', true) // for server side processing
             .withPaginationType('full_numbers') // for get full pagination options // first / last / prev / next and page numbers
+            .withOption('lengthMenu', [[10, 25, 50, 100, 200, -1], [10, 25, 50, 100, 200, "All"]])
             .withDisplayLength(10) // Page size
             .withOption('aaSorting', [0, 'asc'])  // for default sorting column // here 0 means first column       
             .withButtons([
